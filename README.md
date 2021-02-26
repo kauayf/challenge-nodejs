@@ -1,80 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
 
-<img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios-new.png" />
+    body {
+    background-color: #E1E7E4; } 
+    
+    h1 { 
+    color: blueviolet; 
+    align-self: auto;}
 
-<h3 align="center">
-  Desafio 1: Planejando meus estudos
-</h3>
+    </style>
+</head>
+<body>
+    <h1>Desafio de NodeJS Feito por RocketSeat 🚀</h1>
 
-<blockquote align="center">“Sua única limitação é você mesmo”!</blockquote>
+    <h2>Especificações do Teste</h2><br>
+    <p>Em cada teste, tem uma breve descrição no que sua aplicação deve cumprir 
+        para que o teste passe.</p>
+    <ul>
+        <li><strong>Para esse desafio temos os seguintes testes</strong></li><br>
 
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafios?color=%2304D361">
+        <li><strong>should be able to create a new repository:</strong>Para que esse teste passe, sua aplicação deve permitir que um repositório
+            seja criado, e retorne um json com o projeto criado.</li><br>
 
-  <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%2304D361">
-  </a>
+        <li><strong>should be able to list the repositories:</strong> Para que esse teste passe, sua aplicação deve permitir que seja retornado um array
+        com todos os repositórios que foram criados até o momento.</li><br>
 
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
+        <li><strong>should be able to update repository:</strong> Para que esse teste passe, sua aplicação deve permitir que sejam alterados apenas os campos url,
+        title e techs.</li><br>
 
-  <a href="https://github.com/Rocketseat/bootcamp-gostack-desafios/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/rocketseat/bootcamp-gostack-desafios?style=social">
-  </a>
-</p>
+        <li><strong>should not be able to update a repository that does not exist:</strong>Para que esse teste passe, você deve validar na sua rota
+        de update se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status 400.</li><br>
 
-<p align="center">
-  <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#calendar-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
+        <li><strong>should not be able to update repository likes manually:</strong> Para que esse teste passe, você não deve permitir que sua rota
+        de update altere diretamente os likes desse repositório, mantendo o mesmo número de likes que o repositório já possuia antes da atualização.
+        Isso porque o único lugar que deve atualizar essa informação é a rota responsável por aumentar o número de likes.</li><br>
 
-## :rocket: Sobre o desafio
+        <li><strong>should be able to delete the repository:</strong> Para que esse teste passe, você deve permitir que a sua rota de delete exclua um projeto,
+        e ao fazer a exclusão, ele retorne uma resposta vazia, com status 204.</li><br>
 
-Nesse desafio, você deve planejar os seus estudos.
+        <li><strong>should not be able to delete a repository that does not exist:</strong> Para que esse teste passe, você deve validar na sua rota
+        de delete se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status 400.</li><br>
 
-Para isso, você deve criar um cronograma que irá se adaptar ao seu tempo e ritmo.
+        <li><strong>should be able to give a like to the repository:</strong> Para que esse teste passe, sua aplicação deve permitir que um repositório
+        com o id informado possa receber likes. O valor de likes deve ser incrementado em 1 a cada requisição, e como resultado,
+        retornar um json contendo o repositório com o número de likes atualizado.</li><br>
 
-Defina qual será seu horário de estudo, criando tarefas que estarão atreladas a um calendário, para se manter com foco e sempre alinhado com seus objetivos!
-
-### Modelo de cronograma
-
-Para te ajudar nesse desafio, criamos para você um modelo que você pode duplicar através da plataforma Notion.
-
-O Notion funciona tanto em plataformas mobile, tanto em plataformas desktop, e ambas podem ser baixadas em sua [página oficial](https://www.notion.so/product).
-
-Para começar a utilizar o modelo, você deve acessar o link disponibilizado abaixo, e clicar no botão "Duplicate" que fica no menu do canto superior direito da tela.
-
-📄 **[Link para o modelo](https://www.notion.so/Cronograma-de-estudos-e390bc8d2f5743668ec03348a3306070)**
-
-### Definindo o cronograma semanal
-
-<p align="center">
-  <img width="80%" src="./assets/cronograma-diario.png">
-</p>
-
-Nessa sessão você deve informar os horários fixos que você irá se dedicar durante a sua jornada como programador, afinal, a rotina de estudos será o primeiro passo para você conseguir atingir os seus objetivos o mais rápido possível!
-
-### Definindo o cronograma diário
-
-<p align="center">
-  <img width="80%" src="./assets/cronograma-semanal.png">
-</p>
-
-Agora você deve planejar suas tarefas diárias para que você consiga estar preparado para todo o conteúdo que irá consumir durante a semana.
-
-Aqui você pode seguir o modelo disponibilizado abaixo para criar seu próprio calendário de estudos, para que você consiga sempre se manter organizado e focado nos seus objetivos.
-
-Nesse modelo já deixamos preparados tudo o que você pode fazer para essa primeira semana de conteúdos do Bootcamp, você apenas precisará adaptar ao seu ritmo.
-
-Dica: Adicione conteúdo extra como leituras e podcasts, lembre-se de ter pequenas pausas para descansar e assimilar o material estudado. Adicione também tempo reservado para criação de conteúdos, como posts em um blog pessoal ou linkedin.
-
-## :calendar: Entrega
-
-Esse desafio deve ser entregue a partir da plataforma da Rocketseat. Após concluir o desafio, fazer um post no Linkedin sobre ele é uma boa forma de demonstrar seus esforços para evoluir na sua carreira para oportunidades futuras.
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE) para mais detalhes.
-
----
-
-Feito com 💜 by Rocketseat :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+        <li><strong>should not be able to like a repository that does not exist:</strong> Para que esse teste passe, você deve validar na sua rota de
+        like se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status 400.</li><br>
+    </ul>
+    
+</body>
+</html>
