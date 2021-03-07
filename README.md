@@ -8,7 +8,7 @@
 
 <li><strong>should be able to update repository:</strong> Para que esse teste passe, sua aplicação deve permitir que sejam alterados apenas os campos url, title e techs.</li>
 
-<li><strong>should not be able to update a repository that does not exist: Para que esse teste passe, você deve validar na sua rota de update se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status 400.</li>
+<li><strong>should not be able to update a repository that does not exist:</strong> Para que esse teste passe, você deve validar na sua rota de update se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status 400.</li>
 
 <li><strong>should not be able to update repository likes manually:</strong> Para que esse teste passe, você não deve permitir que sua rota de update altere diretamente os likes desse repositório, mantendo o mesmo número de likes que o repositório já possuia antes da atualização. Isso porque o único lugar que deve atualizar essa informação é a rota responsável por aumentar o número de likes.</li>
 
