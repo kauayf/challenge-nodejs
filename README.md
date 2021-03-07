@@ -14,8 +14,7 @@
 
 <li><strong>should be able to delete the repository:</strong> Para que esse teste passe, você deve permitir que a sua rota de delete exclua um projeto, e ao fazer a exclusão, ele retorne uma resposta vazia, com status 204.</li>
 
-<li><strong>should not be able to delete a repository that does not exist:</strong> Para que esse teste passe, você deve validar na sua rota de delete se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status 400.<li><strong>
-
+<li><strong>should not be able to delete a repository that does not exist:</strong> Para que esse teste passe, você deve validar na sua rota de delete se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status 400.</li>
 <li><strong>should be able to give a like to the repository:</strong> Para que esse teste passe, sua aplicação deve permitir que um repositório com o id informado possa receber likes. O valor de likes deve ser incrementado em 1 a cada requisição, e como resultado, retornar um json contendo o repositório com o número de likes atualizado.</li>
 
 <li><strong>should not be able to like a repository that does not exist:</strong> Para que esse teste passe, você deve validar na sua rota de like se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status 400.</li>
