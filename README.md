@@ -1,6 +1,6 @@
 <h1>Desafio de NodeJS Feito por RocketSeat 🚀</h1>
 
-<ul><h4>Para esse desafio temos os seguintes testes:<h4>
+<ul><h4>Para esse desafio temos os seguintes testes:</h4>
 
 <li><strong>should be able to create a new repository:</strong> Para que esse teste passe, sua aplicação deve permitir que um repositório seja criado, e retorne um json com o projeto criado.</li>
 
