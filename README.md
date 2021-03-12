@@ -48,6 +48,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Node.js](https://nodejs.org/en/)
 - [Insomnia](https://insomnia.rest/products/insomnia)
+- [Express](https://expressjs.com/pt-br/)
 
 #### Clonando o projeto
 ```sh
