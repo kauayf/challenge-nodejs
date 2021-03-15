@@ -46,9 +46,9 @@ Certifique-se que o ID seja um UUID, e de sempre iniciar os ```likes``` como 0.
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Node.js](https://nodejs.org/en/)
-- [Insomnia](https://insomnia.rest/products/insomnia)
-- [Express](https://expressjs.com/pt-br/)
+- [Node.js ⚡](https://nodejs.org/en/)
+- [Insomnia ⚡](https://insomnia.rest/products/insomnia)
+- [Express ⚡](https://expressjs.com/pt-br/)
 
 #### Clonando o projeto
 ```sh
